@@ -113,7 +113,7 @@ class MediastoreModule(reactContext: ReactApplicationContext) : ReactContextBase
         mediaList.pushMap(file)
       }
 
-      mapFiles(
+     /* mapFiles(
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
           MediaStore.Video.Media.getContentUri(MediaStore.VOLUME_EXTERNAL)
         } else {
@@ -131,6 +131,7 @@ class MediastoreModule(reactContext: ReactApplicationContext) : ReactContextBase
       ).forEach { file ->
         mediaList.pushMap(file)
       }
+      */
 
       promise.resolve(mediaList)
     }
